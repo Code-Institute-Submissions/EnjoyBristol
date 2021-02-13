@@ -87,3 +87,42 @@ html {
     background-image: url(../img/bristolten.jpg);
     height: 50%;
 }
+
+/**************************** Sections ***********************************/
+
+section {
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+/************************************ Navbar ****************************************/
+
+.contact-para {
+    color: #fff;
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.fas,
+.far {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+nav li a {
+    color: darkgray;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
