@@ -44,3 +44,46 @@ html {
 .navbar {
     background-color: #eae7dc;
 }
+
+/************************************* Parallax ***************************************/
+
+.parallax {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}  
+
+.parallax-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+}
+
+.parallax1 {
+    background-image: url(../img/bristoltwo.jpg);
+    height: 100%;
+}
+
+.parallax2 {
+    background-image: url(../img/bristoltwelve.jpg);
+    height: 50%;
+}
+
+.parallax3 {
+    background-image: url(../img/bristolthirteen.jpg);
+    height: 50%;
+}
+
+.parallax4  {
+    background-image: url(../img/bristoleight.jpg);
+    height: 50%;
+}
+
+.parallax5  {
+    background-image: url(../img/bristolten.jpg);
+    height: 50%;
+}
