@@ -126,3 +126,67 @@ nav li a:hover {
     text-decoration: none;
     color: white;
 }
+
+/****************************** Contact Form **************************/
+
+.center-form {
+    margin: 0 auto;
+    max-width: 70%;
+    padding-bottom: 150px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: #e98074;
+    font-family: "Dosis", sans-serif;
+}
+
+.form-control {
+    margin: 5px 5px;
+}
+
+/********************* Footer ***************************/
+
+.footer-para {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    color: black;
+}
+
+.fas.fa-copyright {
+    color: black;
+    font-size: 12px;
+}
+
+.fab {
+    text-align: center;
+    padding: 5px;
+}
+
+.design {
+    font-size: 12px;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-para,
+    .design,
+    .site-title {
+        text-align: left;
+    }
+    .social-icons {
+        text-align: right;
+    }
+}
