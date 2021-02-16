@@ -19,15 +19,18 @@ html {
 
 /****************************** Headings **********************************/
 
-.history-heading,
+/*.history-heading,
 .about-heading,
 .attractions-heading,
 .shopping-heading,
 .local-heading,
 .contact-heading,
-.about-title {
+.about-title*/ 
+
+h2 {
     font-family: "Dosis", sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 
 .site-title {
@@ -106,6 +109,7 @@ section {
 p   {
     font-family: "Dosis", sans-serif;
     font-weight: 200;
+    text-align: center;
 }
 
 /****************************Attractions Section***********************************/
