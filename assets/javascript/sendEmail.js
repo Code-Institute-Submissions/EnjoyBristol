@@ -1,31 +1,14 @@
-/*function sendMail(contactForm)  {
-    emailjs.send("service_jgyzbkn","enjoybristol"; {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value,
-    });
-    .then(
-        function(response)  {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        });
-        return false;
-}*/
-
-function sendMail(contactForm)  {
-    emailjs.send ("service_jgyzbkn", "enjoybristol", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "your_message": contactForm.projectsummary.value,
-    });
-    then (
-        function(response)  {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        });
-        return false;
-}
+window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_jgyzbkn', 'contact_form', this, 'user_b0Z2XWmpqu0pCQ9qU3sSr')
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
