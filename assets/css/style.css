@@ -119,7 +119,7 @@ p   {
     height: 500px;
 }
 
-.map-button[type="button"]   {
+.map-button[type="button"]{
     margin-top: 10px;
     margin-bottom: 15px;
     color: black;
