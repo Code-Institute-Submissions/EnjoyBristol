@@ -52,28 +52,37 @@ function initMap() {
         });
     }
 
-    
+    function clearMarkers() {
+        for (let i = 0; i < activeMarkers.length; i++) {
+            activeMarkers[i].setMap(null);
+        }
+        activeMarkers = [];
+    }
 
     $(document).ready(function () {
         $("#rest-button").on("click", function () {
+            clearMarkers();
             showMarkers(restMarkers);
         })
     })
 
     $(document).ready(function () {
         $("#bars-button").on("click", function () {
+            clearMarkers();
             showMarkers(barsMarkers);
         })
     })
 
     $(document).ready(function () {
         $("#places-button").on("click", function () {
+            clearMarkers();
             showMarkers(placesMarkers);
         })
     })
 
     $(document).ready(function () {
         $("#family-button").on("click", function () {
+            clearMarkers();
             showMarkers(familyMarkers);
         })
     })
