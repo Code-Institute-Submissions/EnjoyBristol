@@ -34,12 +34,11 @@ h2 {
 }
 
 .site-title {
-    padding: 20px;
     color: black;
     font-family: "Dosis", sans-serif;
     font-weight: 300;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .nav-link {
@@ -127,7 +126,6 @@ p   {
     font-family: "Dosis", sans-serif;
     font-weight: 400;
     font-size: 30px;
-    width: 500px;
     height: 100px;
 }
 
