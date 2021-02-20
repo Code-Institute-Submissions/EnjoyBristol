@@ -7,9 +7,18 @@ $(document).ready(function () {
     });
 });
 
-/**************************** Function for scrolling of Parallax ***********************************/
+/**************************** Function for fixed header scrolling of Parallax ***********************************/
 
 $(window).scroll(function () {
     var scrolledY = $(window).scrollTop();
-    $('#container').css('background-position', 'left ' + ((scrolledY)) + 'px');
+    $("#container").css("background-position", "left " + ((scrolledY)) + "px");
 });
+
+/**************************** Function to close dropdown menu after selecting section ***********************************/
+
+window.onclick = function (e) {
+    let dropDown = document.getElementById("navbarNavDropdown");
+    if (dropDown.classList.contains("show")) {
+        dropDown.classList.remove("show");
+    }
+};
