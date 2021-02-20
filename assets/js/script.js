@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     var scrolledY = $(window).scrollTop();
-    $("#container").css("background-position", "left " + ((scrolledY)) + "px");
+    $("#container").css("background-position", "left " + scrolledY + "px");
 });
 
 /**************************** Function to close dropdown menu after selecting section ***********************************/
@@ -22,3 +22,4 @@ window.onclick = function (e) {
         dropDown.classList.remove("show");
     }
 };
+

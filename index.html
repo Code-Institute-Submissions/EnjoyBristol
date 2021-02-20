@@ -1,289 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enjoy Bristol</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_b0Z2XWmpqu0pCQ9qU3sSr");
-        })
-    </script>
-</head>
-
-<body>
-
-    <!---------------------------------Navbar---------------------------------->
-    <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-light navbar-expand-sm">
-            <a href="#"><h1 class="site-title">Enjoy Bristol</h1></a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
-                    <a class="nav-link active" href="#">Home</a>
-
-                    <a class="nav-link" href="#about">About</a>
-
-                    <a class="nav-link" href="#attractions">Attractions</a>
-
-                    <a class="nav-link" href="#shopping">Shopping</a>
-
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-
-    <!------------------------------About Section--------------------------------->
-    <div class="parallax-overlay">
-        <div class="parallax parallax1"></div>
-    </div>
-    <section id="about">
-        <h2 class="about-heading text-uppercase text-center">About</h2>
-        <br>
-        <div class="container-fluid" id="about-section">
-            <div class="container">
-                <div class="row about-row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <h2 class="about-title">Brief History</h2>
-                        <br>
-                        <p>The beginnings of Bristol start back during the Anglo Saxon times. Originally called
-                            Brigstowe, Bristol was initially a settlement around a wooden bridge that crossed the River
-                            Avon. In the middle ages trading became more popular and so did Bristol. Boats would come in
-                            and out of the docks with wool, wine, fish and iron.
-                        </p>
-                        <p>However Bristol would to its shame become heavily involved in the slave trade during the
-                            1700s. Bristol, during this time grew to become England’s second biggest city. Many goods
-                            were exchanged that were manufactured in Bristol for people from West Africa. The people
-                            were then sold in slavery, mainly in the Caribbean.</p>
-                        <p>In the 19th century, commerce and population grew immensely in Bristol. This was in part due
-                            to a new “Floating Harbour” and Isambard Kingdom Brunel designing the Great Western Railway
-                            between London and Bristol. Brunel also designed and built the Clifton Suspension Bridge
-                            which still stands today and is a great tourist attraction for visitors.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <h2 class="about-title">Modern Bristol</h2>
-                        <br>
-                        <p>Bristol in modern times is a bustling hub of business, education, diversity and culture!
-                            Currently the city has a population of around 459,000, with 54,000 of those being students.
-                            Bristol celebrates diversity and has 45 religions, 187 countries of birth and 91 main
-                            languages spoken! We truly are breaking the mould of being “slave traders”!</p>
-                        <p>Bristol celebrates progress also. It has over 400 parks and gardens and was the first UK City
-                            to be awarded the European Green Capital in 2015. Bristol is also the Vegan Capital
-                            according to foodie website Chef’s Pencil. The city also boasts being the UK’s first ever
-                            cycling city!</p>
-                        <p>Not many places can boast the beginnings of an art sensation but Bristol can. Banksy is from
-                            here and his art started a cultural wave of street art which extended from Bristol to LA to
-                            Tokyo. Aardman Animations is based in Bristol and has produced the Wallace and Gromit
-                            series. A whopping 25% of all environmental documentaries are made in Bristol, many
-                            including the legendary David Attenborough!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!------------------------------------Attractions Section------------------------------->
-
-    <div class="parallax parallax2"></div>
-
-    <section id="attractions">
-        <h2 class="attractions-heading text-uppercase text-center">Attractions</h2>
-        <p>Click on the attraction you'd like for today and see their locations on the map!</p>
-        <br>
-        <div class="container-fluid attractions-container">
-            <div class="row content-row">
-                <div class="col-lg-6 col-md-12 col-sm-12 buttons-content" id="buttons-content">
-                    <div class="row buttons-row">
-                        <div class="col-12 text-center map-buttons">
-                            <button type="button" id="rest-button"
-                                class="map-button mp-button1 btn btn-secondary btn-lg btn-block">Restaurants</button>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="col-12 text-center map-buttons">
-                            <button type="button" id="bars-button"
-                                class="map-button mp-button2 btn btn-secondary btn-lg btn-block"
-                                name="restaurant-button">Bars &
-                                Clubs</button>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="col-12 text-center map-buttons">
-                            <button type="button" id="places-button"
-                                class="map-button mp-button3 btn btn-secondary btn-lg btn-block">Places To
-                                Stay</button>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="col-12 text-center map-buttons">
-                            <button type="button" id="family-button"
-                                class="map-button mp-button4 btn btn-secondary btn-lg btn-block">Family
-                                Attractions</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div id="map"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!------------------------Shopping Section------------------------>
-
-    <div class="parallax parallax3"></div>
-
-    <section id="shopping">
-        <h2 class="shopping-heading text-uppercase text-center">Shopping</h2>
-        <p>Click on any image to go straight to their website!</p>
-        <br>
-        <div class="container-fluid shopping-container">
-            <div class="row shop-row">
-                <div class="col-lg-4 col-md-12 col-sm-12" id="cabot-image">
-                    <h2>Cabot Circus</h2>
-                    <p>
-                        <a href="https://www.cabotcircus.com/" target="_blank">
-                            <img alt="cabot-circus" src="assets/img/cabotimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" id="mall-image">
-                    <h2>Cribbs Causeway</h2>
-                    <p>
-                        <a href="https://www.mallcribbs.com/" target="_blank">
-                            <img alt="cabot-circus" src="assets/img/cribbsimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" id="whapping-image">
-                    <h2>Wapping Wharf</h2>
-                    <p>
-                        <a href="http://wappingwharf.co.uk/" target="_blank">
-                            <img alt="cabot-circus" src="assets/img/whappingimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-            </div>
-            <div class="row shop-row2">
-                <div class="col-lg-4 col-md-12 col-sm-12" id="steps-image">
-                    <h2>Christmas Steps</h2>
-                    <p>
-                        <a href="https://www.tripadvisor.co.uk/Attraction_Review-g186220-d212294-Reviews-Christmas_Steps-Bristol_England.html"
-                            target="_blank">
-                            <img alt="cabot-circus" src="assets/img/stepsimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" id="market-image">
-                    <h2>St. Nicks Market</h2>
-                    <p>
-                        <a href="https://www.bristol.gov.uk/web/st-nicholas-markets" target="_blank">
-                            <img alt="cabot-circus" src="assets/img/saintimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" id="arcade-image">
-                    <h2>Clifton Arcade</h2>
-                    <p>
-                        <a href="http://www.discoverclifton.co.uk/attractions/the-clifton-arcade/" target="_blank">
-                            <img alt="cabot-circus" src="assets/img/cliftonimage.jpg" width="300"
-                                height="300"></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-------------------------Contact Section------------------------->
-
-    <div class="parallax parallax5"></div>
-
-    <section id="contact">
-        <div class="container-fluid">
-            <div class="row bg-color-contact">
-                <div class="col">
-                    <h2 class="contact-heading text-uppercase text-center">Contact Us</h2>
-                    <br>
-                    <div class="center-form">
-                        <form id="contact-form">
-                            <input type="hidden" name="contact_number">
-                            <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Name"
-                                required />
-
-                            <input type="email" name="user_email" id="user_email" class="form-control"
-                                placeholder="Email" required />
-
-                            <textarea name="message" id="message" rows="5" class="form-control"
-                                placeholder="Your Message" required></textarea>
-
-                            <div class="form-row text-center">
-                                <div class="col">
-                                    <button type="submit" class="btn btn-secondary">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="social-icons col-sm-6 order-sm-12">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/home" target="_blank">
-                        <i class="fab fa-twitter"></i></a>
-                </div>
-
-                <div class="col-sm-6 order-sm-1">
-                    <p class="footer-para" id="footer-para">
-                        Copyright<i class="fas fa-copyright"> </i>Enjoy Bristol - All
-                        Rights Reserved
-                    </p>
-
-
-                    <p class="design" id="design">Design by SVickery Products Ltd</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/772f328c50.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-    <script src="assets/js/script.js">
-    </script>
-    <script src="assets/js/maps.js">
-    </script>
-    <script src="assets/js/sendEmail.js">
-    </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI5Kp4wgK6crOzxoTiLAEZJhmttN06qbA&callback=initMap&libraries=&v=weekly"
-        async>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enjoy Bristol</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_b0Z2XWmpqu0pCQ9qU3sSr");
+            });
         </script>
-</body>
+    </head>
 
+    <body>
+        <!---------------------------------Navbar---------------------------------->
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-light navbar-expand-sm">
+                <a href="#"><h1 class="site-title">Enjoy Bristol</h1></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <a class="nav-link active" href="#">Home</a>
+
+                        <a class="nav-link" href="#about">About</a>
+
+                        <a class="nav-link" href="#attractions">Attractions</a>
+
+                        <a class="nav-link" href="#shopping">Shopping</a>
+
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!------------------------------About Section--------------------------------->
+        <div class="parallax-overlay">
+            <div class="parallax parallax1"></div>
+        </div>
+        <section id="about">
+            <h2 class="about-heading text-uppercase text-center">About</h2>
+            <br />
+            <div class="container-fluid" id="about-section">
+                <div class="container">
+                    <div class="row about-row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                            <h2 class="about-title">Brief History</h2>
+                            <br />
+                            <p>
+                                The beginnings of Bristol start back during the Anglo Saxon times. Originally called Brigstowe, Bristol was initially a settlement around a wooden bridge that crossed the River Avon. In the middle ages
+                                trading became more popular and so did Bristol. Boats would come in and out of the docks with wool, wine, fish and iron.
+                            </p>
+                            <p>
+                                However Bristol would to its shame become heavily involved in the slave trade during the 1700s. Bristol, during this time grew to become England’s second biggest city. Many goods were exchanged that were
+                                manufactured in Bristol for people from West Africa. The people were then sold in slavery, mainly in the Caribbean.
+                            </p>
+                            <p>
+                                In the 19th century, commerce and population grew immensely in Bristol. This was in part due to a new “Floating Harbour” and Isambard Kingdom Brunel designing the Great Western Railway between London and
+                                Bristol. Brunel also designed and built the Clifton Suspension Bridge which still stands today and is a great tourist attraction for visitors.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                            <h2 class="about-title">Modern Bristol</h2>
+                            <br />
+                            <p>
+                                Bristol in modern times is a bustling hub of business, education, diversity and culture! Currently the city has a population of around 459,000, with 54,000 of those being students. Bristol celebrates
+                                diversity and has 45 religions, 187 countries of birth and 91 main languages spoken! We truly are breaking the mould of being “slave traders”!
+                            </p>
+                            <p>
+                                Bristol celebrates progress also. It has over 400 parks and gardens and was the first UK City to be awarded the European Green Capital in 2015. Bristol is also the Vegan Capital according to foodie website
+                                Chef’s Pencil. The city also boasts being the UK’s first ever cycling city!
+                            </p>
+                            <p>
+                                Not many places can boast the beginnings of an art sensation but Bristol can. Banksy is from here and his art started a cultural wave of street art which extended from Bristol to LA to Tokyo. Aardman
+                                Animations is based in Bristol and has produced the Wallace and Gromit series. A whopping 25% of all environmental documentaries are made in Bristol, many including the legendary David Attenborough!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------Attractions Section------------------------------->
+
+        <div class="parallax parallax2"></div>
+
+        <section id="attractions">
+            <h2 class="attractions-heading text-uppercase text-center">Attractions</h2>
+            <p>Click on the attraction you'd like for today and see their locations on the map!</p>
+            <br />
+            <div class="container-fluid attractions-container">
+                <div class="row content-row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 buttons-content" id="buttons-content">
+                        <div class="row buttons-row">
+                            <div class="col-12 text-center map-buttons">
+                                <button type="button" id="rest-button" class="map-button mp-button1 btn btn-secondary btn-lg btn-block">Restaurants</button>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="col-12 text-center map-buttons">
+                                <button type="button" id="bars-button" class="map-button mp-button2 btn btn-secondary btn-lg btn-block" name="restaurant-button">Bars & Clubs</button>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="col-12 text-center map-buttons">
+                                <button type="button" id="places-button" class="map-button mp-button3 btn btn-secondary btn-lg btn-block">Places To Stay</button>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="col-12 text-center map-buttons">
+                                <button type="button" id="family-button" class="map-button mp-button4 btn btn-secondary btn-lg btn-block">Family Attractions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------Shopping Section------------------------>
+
+        <div class="parallax parallax3"></div>
+
+        <section id="shopping">
+            <h2 class="shopping-heading text-uppercase text-center">Shopping</h2>
+            <p>Click on any image to go straight to their website!</p>
+            <br />
+            <div class="container-fluid shopping-container">
+                <div class="row shop-row">
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="cabot-image">
+                        <h2>Cabot Circus</h2>
+                        <p>
+                            <a href="https://www.cabotcircus.com/" target="_blank"> <img alt="cabot-circus" src="assets/img/cabotimage.jpg" width="300" height="300" /></a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="mall-image">
+                        <h2>Cribbs Causeway</h2>
+                        <p>
+                            <a href="https://www.mallcribbs.com/" target="_blank"> <img alt="cabot-circus" src="assets/img/cribbsimage.jpg" width="300" height="300" /></a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="whapping-image">
+                        <h2>Wapping Wharf</h2>
+                        <p>
+                            <a href="http://wappingwharf.co.uk/" target="_blank"> <img alt="cabot-circus" src="assets/img/whappingimage.jpg" width="300" height="300" /></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row shop-row2">
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="steps-image">
+                        <h2>Christmas Steps</h2>
+                        <p>
+                            <a href="https://www.tripadvisor.co.uk/Attraction_Review-g186220-d212294-Reviews-Christmas_Steps-Bristol_England.html" target="_blank">
+                                <img alt="cabot-circus" src="assets/img/stepsimage.jpg" width="300" height="300" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="market-image">
+                        <h2>St. Nicks Market</h2>
+                        <p>
+                            <a href="https://www.bristol.gov.uk/web/st-nicholas-markets" target="_blank"> <img alt="cabot-circus" src="assets/img/saintimage.jpg" width="300" height="300" /></a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12" id="arcade-image">
+                        <h2>Clifton Arcade</h2>
+                        <p>
+                            <a href="http://www.discoverclifton.co.uk/attractions/the-clifton-arcade/" target="_blank"> <img alt="cabot-circus" src="assets/img/cliftonimage.jpg" width="300" height="300" /></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------Contact Section------------------------->
+
+        <div class="parallax parallax5"></div>
+
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row bg-color-contact">
+                    <div class="col">
+                        <h2 class="contact-heading text-uppercase text-center">Contact Us</h2>
+                        <br />
+                        <div class="center-form">
+                            <form id="contact-form">
+                                <input type="hidden" name="contact_number" />
+                                <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Name" required />
+
+                                <input type="email" name="user_email" id="user_email" class="form-control" placeholder="Email" required />
+
+                                <textarea name="message" id="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+
+                                <div class="form-row text-center">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-secondary">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="social-icons col-sm-6 order-sm-12">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i> </a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> </a>
+                        <a href="https://twitter.com/home" target="_blank"> <i class="fab fa-twitter"></i></a>
+                    </div>
+
+                    <div class="col-sm-6 order-sm-1">
+                        <p class="footer-para" id="footer-para">Copyright<i class="fas fa-copyright"> </i>Enjoy Bristol - All Rights Reserved</p>
+
+                        <p class="design" id="design">Design by SVickery Products Ltd</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/772f328c50.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/maps.js"></script>
+        <script src="assets/js/sendEmail.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI5Kp4wgK6crOzxoTiLAEZJhmttN06qbA&callback=initMap&libraries=&v=weekly" async></script>
+    </body>
 </html>

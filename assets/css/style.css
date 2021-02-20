@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
@@ -47,7 +47,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-}  
+}
 
 .parallax-overlay {
     position: relative;
@@ -73,12 +73,12 @@ h2 {
     height: 50%;
 }
 
-.parallax4  {
+.parallax4 {
     background-image: url(../img/bristoleight.jpg);
     height: 50%;
 }
 
-.parallax5  {
+.parallax5 {
     background-image: url(../img/bristolten.jpg);
     height: 50%;
 }
@@ -97,7 +97,7 @@ section {
     margin-bottom: 40px;
 }
 
-p   {
+p {
     font-family: "Dosis", sans-serif;
     font-weight: 200;
     text-align: center;
@@ -105,12 +105,12 @@ p   {
 
 /****************************Attractions Section***********************************/
 
-#map   {
+#map {
     width: 100%;
     height: 500px;
 }
 
-.map-button[type="button"]{
+.map-button[type="button"] {
     margin-top: 10px;
     margin-bottom: 15px;
     color: black;
@@ -216,3 +216,4 @@ button[type="submit"] {
         text-align: right;
     }
 }
+
