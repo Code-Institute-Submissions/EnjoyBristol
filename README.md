@@ -3,7 +3,7 @@
 
 [View website in Github pages!](https://github.com/svickery/EnjoyBristol)
 
-![alt text](https://github.com/svickery/enjoybristol/blob/master/assets/img/EnjoyBristol..jpg "Website Screenshot")
+![alt text](https://github.com/svickery/EnjoyBristol/blob/e45d07cc56e93a4b4c569fa25ecd7a20989e8de7/assets/img/EnjoyBristolSS..jpg "Website Screenshot")
 
 A comprehensive website for tourist information about the city of Bristol in the UK. A parallax effect has been added to the website with a fixed navbar for easy navigation. The parallax images are of landmarks in Bristol. The home page is one large picture of man walking through Bristol City centre. Scrolling down the page there is an about section, an attractions section, a shopping section and a contact form for the website. The purpose of the website is to give important information to visitors of the city of Bristol and for the user to be able to know what they can do through a few day stay. 
 
@@ -111,7 +111,7 @@ In the footer is copyright information and links to the social media sites.
 
 ## Technologies Used
 
-* The project uses HTML and CSS languages. 
+* The project uses HTML, CSS and JavaScript languages. 
 * [Github](https://github.com/) - I used this for all coding (IDE) while building the website.
 * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Used for grid layouts and cards on my page. Also allowed me to use Font Awesome icons for my social media links. 
 * [Font Awesome](https://fontawesome.com/) - Used for social link icons in conjuction with bootstrap. 
@@ -121,6 +121,9 @@ In the footer is copyright information and links to the social media sites.
 * [W3Schools](https://www.w3schools.com/) - Used to help with contact form and other various coding questions.
 * [JSfiddle](http://jsfiddle.net/QN9cH/1/) - This was to help with parallax scrolling effect on iOS mobile devices. 
 * [Autoprefixer](https://autoprefixer.github.io/) - Used to ensure CSS is correct
+* [JQuery](https://jquery.com/) - Used for JQuery elements applied in JavaScript and some help with writing code.
+* [EmailJS](https://www.emailjs.com/) - JavaScript code given to make Contact Form functional.
+* [Trip Advisor](https://www.tripadvisor.co.uk/) - Used for the attraction locations.
 
 ## Testing
 
@@ -136,9 +139,11 @@ To test the website, the project code was run through both a Markup checker, a C
 
 [Results]
 
+There are no errors in the CSS Validator.
+
 [JavaScript Validator](https://jslint.com/)
 
-There are no errors in the CSS Validator.
+
 
 #### Testing User Stories
 
