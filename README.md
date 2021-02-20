@@ -56,13 +56,16 @@ The user goals of the website are as follows:
 
 As a site user, I want to:
 
-1. Access the website on any device available to me
-2. Easily navigate the website
-3. Content must be easily read and information must be displayed correctly 
-4. Find suggestions of what activities I can do within the city, this includes Restaurants for my stay, bars/clubs and day time activities 
-5. I want to see where local shopping areas are available and in my locality
-6. Be able to contact the website for further information on any questions I have to ask 
-7. As a user I want to know the opening hours of businesses
+1. As a new visitor I want to be able to access the website on any device available to me
+2. As a new visitor I want to easily navigate the website
+3. As a new visitor I want it so content is easily read and information must be displayed correctly 
+4. As a user I want to find activities I can do within the city, this includes Restaurants for my stay, bars/clubs and day time activities 
+5. As a potential user I want to see where local shopping areas are available and in my locality
+6. As a potential user I want to be able to contact the website for further information on any questions I have to ask 
+7. As a potential user I want to know the opening hours of businesses
+8. As a potential user I want to find social media links
+9. As a returning user I want to be able to contact easily again
+10. As a returning user I want to be able navigate easily to section I would like
 
 As a site owner, I want to:
 
@@ -74,5 +77,178 @@ As a site owner, I want to:
 
 #### Wireframes:
 
-[View wireframes here:](https://www.figma.com/file/ijrzooEmMekcVekPbQtijc/Enjoy-Bristol?node-id=0%3A1)
+[View Wireframes Here](https://www.figma.com/file/ijrzooEmMekcVekPbQtijc/Enjoy-Bristol?node-id=0%3A1)
+
+## Features
+
+The entire website is one scrolling parallax effect. Therefore there are no need for separate pages. This means that to use the site more efficiently the navigation bar the top of the page was made sticky. This means that wherever you scroll or click on the page, then the navigation bar moves with it and stays at the top. In the scrolling page, their is a hero image on the front page, and images between each other page, which are at a height of 50%, so there is less scrolling time of the site visitor. There are four sections to the page in total. A home page, attraction page, shopping page and a contact page. There is also a footer, where the social link icons are and copyright information. 
+
+#### Home
+
+The Home page features one large photography covering the entire page. The name of the company also appears as a header and there is no logo used for the site. 
+
+#### Attractions
+
+The attractions page has four clickable buttons on the left side of the page. Navigation menu is sticky at the top of the page. These buttons are labelled as Restaurants, Bars & Clubs, Places to Stay and Family Attractions. There is a google maps on the right side of the page. When the buttons are clicked, they bring up the top ten of each topic according to tripadvisor.co.uk, which is a trusted review site. Markers appear on the map with each button clicked and they clear when another button is clicked. If you then click the marker on the map an info window pops up with the attraction name and a short description. There is a short paragraph under the section title to explain how to use the buttons and what they do for the user.
+
+#### Shopping
+
+Between the Attractions section and the shopping section there is a parallax effect with a new picture. Navigation menu is again sticky at the top of the page. The shopping section consists of six different photographs of shopping area in Bristol. Each of these photographs is clickable and opens an external page directly to the corresponding shopping area website. There is a short paragraph under the section title to explain how to use the photographs and what they do for the user.   
+
+#### Contact Us
+
+Once again there is a picture between Shopping section and Contact Us section using the parallax effect. The navigation is again at the top as always. This is just a simple form with a call to action button at the bottom to allow a potential client to send through their query to the service provider. There is a name, email and message section for the form. The form is fully functional and email will be sent to site owner. 
+
+#### Footer
+
+In the footer is copyright information and links to the social media sites.
+
+#### Possible Future Features
+
+* GDPR compliant pop up screen. 
+* A local weather section.
+* Blog from people living in the city.
+
+## Technologies Used
+
+* The project uses HTML and CSS languages. 
+* [Github](https://github.com/) - I used this for all coding (IDE) while building the website.
+* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Used for grid layouts and cards on my page. Also allowed me to use Font Awesome icons for my social media links. 
+* [Font Awesome](https://fontawesome.com/) - Used for social link icons in conjuction with bootstrap. 
+* [Google Fonts](https://fonts.google.com/) - Used for entire website fonts.
+* [Stack Overflow](https://stackoverflow.com/) - Used for the JavaScript necessary to get my stick navigation bar to work. 
+* [Web Formatter](https://webformatter.com/) - Used to make my code cleaner and easier to read.
+* [W3Schools](https://www.w3schools.com/) - Used to help with contact form and other various coding questions.
+* [JSfiddle](http://jsfiddle.net/QN9cH/1/) - This was to help with parallax scrolling effect on iOS mobile devices. 
+* [Autoprefixer](https://autoprefixer.github.io/) - Used to ensure CSS is correct
+
+## Testing
+
+To test the website, the project code was run through both a Markup checker, a CSS checker and a JavaScript checker, below are the screenshots of the results and explanations. 
+
+[Markup Validator](https://validator.w3.org/#validate_by_input) 
+
+[Results]
+
+
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+
+[Results]
+
+[JavaScript Validator](https://jslint.com/)
+
+There are no errors in the CSS Validator.
+
+#### Testing User Stories
+
+ * ##### New Visitor Goals
+   
+    i. *As a new visitor I want to be able to access the website on any device available to me*
+  
+     a. Site is fully functional upon load and is designed with mobile first in mind. 
+     b. All info is available in any format, no information has been removed or shortened.
+     
+    ii. *As a new visitor I want to easily navigate the website*
+    
+     a. As soon as the website is clicked there is a navigation bar at the top of the page.
+     b. Scrolling down the page, navigation is still easy as the navigation bar stays at the top of the page.
+     c. The site uses a parallax effect and therefore navigation is always smooth. There is no need to keep going back and forth through pages, all information is       on one scrolling page. 
+    
+    iii. *As a new visitor I want it so content is easily read and information must be displayed correctly*
+   
+     a. As site loads, colour scheme is modern and clean.  
+     b. Font is clear and professional, easy to read and large where necessary.
+     c. All functions are explained to the user, such as buttons and clickable pictures in Shopping section.
+     d. Info windows are available for all attractions and easily read.
+    
+ * ##### Potential User Goals
+ 
+    i. *As a potential user I want to see where local shopping areas are available and in my locality*
+    
+     a. Navigation immediately shows Shopping section as an option. 
+     b. All shopping areas are labelled. 
+     c. There is a variety of shopping areas to suit where the user is staying in the city.
+    
+    ii. *As a potential user I want to be able to contact the website for further information on any questions I have to ask*
+    
+     a. Navigation bar shows Contact Us section.
+     b. Contact Us form is self explanatory and easy to use.
+     
+   iii. *As a potential user I want to know the opening hours of businesses*
+     
+     a. Opening hours are on each info window of the map markers.
+     
+    iv. *As a potential user I want to find social media links*
+    
+     a. Social media links are displayed in the footer.
+     b. Icons are used for each social media link so that the user can recognise easily. 
+ 
+ * ##### Returning Customer Goals
+ 
+    i. *As a returning user I want to be able to contact easily again*
+    
+     a. If user returns the option of Contact Us form is available.
+     b. No restriction on use of Contact Us form.
+     
+    ii. *As a returning user I want to be able navigate easily to section I would like*
+    
+     a. If returning, a user will most likely be looking for a specific section most likely.
+     b. All sections are easily seen in navigation bar at top of page.
+
+#### Further Testing
+
+ * Testing was completed on desktop browsers Google Chrome, Safari and Microsoft Edge.
+ * Testing was completed on numerous devices iPhone X, iPhone 12, iPad, Google Pixel, Laptop and Desktop.
+ * All testing went well.  
+
+#### Known Bugs
+
+ * Currently no known bugs. 
+
+## Deployment
+
+This site is hosted by GitHub pages and deployed directly from the master branch. The site updates automatically from updates that are new commits from the master branch. For the site to deploy on GitHub pages the landing page must be correctly named 'index.html'.
+
+I deployed the site by following the next steps:
+
+1. Logged into GitHub and located the correct repository
+2. Went into Settings at the top of my Enjoy Bristol repository
+3. Located GitHub "Pages" in settings
+4. Selected "Master Branch" from the "Source" dropdown
+5. Page automatically refreshed, I scrolled back to "Pages" section to find the newly published site
+
+To make a clone of this site, please follow these steps:
+
+1. Log in to GitHub and find the repository required
+2. Click "Clone or download"
+3. Use the "Clone with HTTPS" option and copy the link
+4. Open Git Bash
+5. Edit the working directory to a location you want it to be cloned in
+6. Type `git clone` and paste the url you copied previously which should look as follows:
+
+`https://github.com/YOUR-USERNAME/YOUR-REPOSITORY` 
+
+7. Press enter and the repository should be cloned
+
+
+## Credits
+
+#### Content
+
+All text and content on the page was written by myself apart from some JavaScript which I found on a fellow code institute's website called Dublin Unlocked. This was used for the on click function necessary with the map. 
+
+#### Media
+
+All images used on this page were taken from [unsplash.com](https://unsplash.com/).
+
+#### Code
+
+Code for the navigation bar was taken from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+
+My Contact form was a putting together of code from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) and [W3Schools](https://www.w3schools.com/). However it was written by myself. 
+
+
+## Acknowledgments
+
 
