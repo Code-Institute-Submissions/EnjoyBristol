@@ -1,41 +1,20 @@
 let map;
 
-$(document).ready(function () {
-    $(".rest-button").on("click", function () {
-        showMarkers();
-    })
-})
-
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
         center: { lat: 51.4545, lng: -2.5879 },
     });
 
-
-
-    /*addMarker({ lat: 51.4633, lng: -2.5627 });
-    addMarker({ lat: 51.46321702996142, lng: -2.579255137623604 });
-    addMarker({ lat: 51.44731223181664, lng: -2.6187742524261095 });
-    addMarker({ lat: 51.454101827474275, lng: -2.5935277771187497 });
-    addMarker({ lat: 51.44557902145428, lng: -2.6111742578997177 });
-    addMarker({ lat: 51.4545486706721, lng: -2.5937861803603552 });
-    addMarker({ lat: 51.44761837714534, lng: -2.59841982225568 });
-    addMarker({ lat: 51.44251114136632, lng: -2.563195005366259 });
-    addMarker({ lat: 51.45058508187981, lng: -2.619806222576851 });
-    addMarker({ lat: 51.4602982057476, lng: -2.601098539142902 });
-
-    function addMarker(coords) {
-        var marker = new google.maps.Marker({
-            position: coords,
-            map: map,
-        });
-    }*/
-
+    /****************************Variable to for markers***********************************/
 
     var activeMarkers = [];
 
+    /****************************Info window variable for each location***********************************/
+
     var infoWindow = new google.maps.InfoWindow();
+
+    /****************************Function for markers to appear when button clicked***********************************/
 
     function addMarker(property) {
         var marker = new google.maps.Marker({
@@ -52,12 +31,16 @@ function initMap() {
         });
     }
 
+    /****************************Function for clearing markers***********************************/
+
     function clearMarkers() {
         for (let i = 0; i < activeMarkers.length; i++) {
             activeMarkers[i].setMap(null);
         }
         activeMarkers = [];
     }
+
+    /****************************On click functions for each button***********************************/
 
     $(document).ready(function () {
         $("#rest-button").on("click", function () {
@@ -87,6 +70,8 @@ function initMap() {
         })
     })
 
+    /****************************Loop to show markers on map***********************************/
+
     function showMarkers(markers) {
         for (i = 0; i < markers.length; i++) {
             addMarker(markers[i]);
@@ -94,7 +79,7 @@ function initMap() {
         map.setCenter({ lat: 51.4545, lng: -2.5879 });
     }
 
-
+    /****************************Markers locations and content of info windows***********************************/
 
     var restMarkers = [
         {
