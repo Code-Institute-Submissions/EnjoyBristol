@@ -124,6 +124,8 @@ In the footer is copyright information and links to the social media sites.
 * [JQuery](https://jquery.com/) - Used for JQuery elements applied in JavaScript and some help with writing code.
 * [EmailJS](https://www.emailjs.com/) - JavaScript code given to make Contact Form functional.
 * [Trip Advisor](https://www.tripadvisor.co.uk/) - Used for the attraction locations.
+* [W3 Validator](https://validator.w3.org/#validate_by_input) - Used to ensure HTML is correct.
+* [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
 
 ## Testing
 
@@ -131,19 +133,29 @@ To test the website, the project code was run through both a Markup checker, a C
 
 [Markup Validator](https://validator.w3.org/#validate_by_input) 
 
-[Results]
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/HTMLValidator2.jpg "HTML Validator")
 
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/HTMLValidator.jpg)
 
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/HTML%20Validator1.jpg)
+
+The errors that have shown up are ones that can't be avoided. The 'type=' issue regarding the use of the word JavaScript is not correct. If it is removed in the html, it does not work. The <ul> issue is due to the html validator not recognising bootstrap. The issue with '--' used for the comments is irrelevant. 
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
-[Results]
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/CSSValidator.jpg "CSS Validator")
 
 There are no errors in the CSS Validator.
 
 [JavaScript Validator](https://jslint.com/)
 
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/JSMaps1.jpg "JavaScript Validator")
 
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/JSEmail.jpg)
+
+![alt text](https://github.com/svickery/EnjoyBristol/blob/4aeecd42c56234e5bdfd175ae463d0525e16df28/assets/img/JSScript.jpg)
+
+The JS validator shows up some issues with certain characters being used, such as the use of '$' and other "undeclared" items in the code. However this would make the code unusable. There is also an issue with there being too many characters in some sections, but this is unavoidable due to the descriptions needed in the info windows. LET has been taught to us as being acceptable as VAR, but this will be rectified.
 
 #### Testing User Stories
 
@@ -256,4 +268,4 @@ My Contact form was a putting together of code from [Bootstrap](https://getboots
 
 ## Acknowledgments
 
-
+Acknowledgment has to be made to Shane Keran who is on the same course as me. His site was an inspiration to me for my project and I used his click button code to make my site work. Very appreciative. Another acknoledgments are my mentor Adegbenga Adeye and Jim Morel who I met through Slack. 
