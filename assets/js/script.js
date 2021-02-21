@@ -16,7 +16,7 @@ $(window).scroll(function () {
 
 /**************************** Function to close dropdown menu after selecting section ***********************************/
 
-window.onclick = function (e) {
+window.onclick = function () {
     let dropDown = document.getElementById("navbarNavDropdown");
     if (dropDown.classList.contains("show")) {
         dropDown.classList.remove("show");
