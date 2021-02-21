@@ -178,6 +178,8 @@ The JS validator shows up some issues with certain characters being used, such a
      b. Font is clear and professional, easy to read and large where necessary.
      c. All functions are explained to the user, such as buttons and clickable pictures in Shopping section.
      d. Info windows are available for all attractions and easily read.
+     
+![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/about.jpg)
     
  * ##### Potential User Goals
  
@@ -186,17 +188,23 @@ The JS validator shows up some issues with certain characters being used, such a
      a. Navigation immediately shows Shopping section as an option. 
      b. All shopping areas are labelled. 
      c. There is a variety of shopping areas to suit where the user is staying in the city.
+     
+ ![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/shopping.jpg)
     
-    ii. *As a potential user I want to be able to contact the website for further information on any questions I have to ask*
+   ii. *As a potential user I want to be able to contact the website for further information on any questions I have to ask*
     
      a. Navigation bar shows Contact Us section.
      b. Contact Us form is self explanatory and easy to use.
+     
+![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/contact.jpg)
      
    iii. *As a potential user I want to know the opening hours of businesses*
      
      a. Opening hours are on each info window of the map markers.
      
-    iv. *As a potential user I want to find social media links*
+![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/attractions.jpg)
+     
+   iv. *As a potential user I want to find social media links*
     
      a. Social media links are displayed in the footer.
      b. Icons are used for each social media link so that the user can recognise easily. 
