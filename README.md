@@ -229,7 +229,7 @@ The JS validator shows up some issues with certain characters being used, such a
 
 #### Known Bugs
 
- * Currently no known bugs. 
+ * One bug has been found with github/gitpod. When loading the workspace it says 'Connection got disposed'. After searching for this on google this appears to be an issue with cloud servers linked to git. It is an issue with loading API's too slowly. 
 
 ## Deployment
 
